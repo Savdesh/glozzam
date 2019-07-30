@@ -136,6 +136,68 @@
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="p-4 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">Testimonials</h2>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <div class="row">
+                  <div class="col-md-6">
+                <p class="mb-0">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, numquam.
+                </p>
+                <footer class="blockquote-footer">John Doe From 
+                    <cite title="Company 1">Company 1</cite>
+                  </footer>
+                  <p class="font-italic">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis adipisci officia dolor vitae corporis! Itaque blanditiis eaque iste, quas voluptatem veritatis qui laborum, amet eum natus quibusdam modi porro minus?"</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/image1.jpg" alt="" class="img-fluid rounded-circle">
+                </div>
+                </div>
+              </blockquote>
+            </div>
+            <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, numquam.
+                  </p>
+                  <footer class="blockquote-footer">Sam Smith From 
+                    <cite title="Company 2">Company 2</cite>
+                  </footer>
+                </blockquote>
+              </div>
+              <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-0">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, numquam.
+                    </p>
+                    <footer class="blockquote-footer">Meghan Williams From 
+                      <cite title="Company 3">Company 3</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Glozzam Theme <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -146,6 +208,12 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1
+    });
 
   </script>
 </body>
